@@ -11,28 +11,39 @@
         <section id="calc_container">
             <div id="visor">
                 <p id="previous">1 + 2 + 33</p>
-                <p id="atual">10/2</p>
+                <p id="atual"></p>
             </div>
             <div id="botoes_container">
-                <div class="botoes" id="ac">AC</div>
-                <div class="botoes" id="0">0</div> 
-                <div class="botoes" id="1">1</div>
-                <div class="botoes" id="2">2</div>
-                <div class="botoes" id="3">3</div>
-                <div class="botoes" id="4">4</div>
-                <div class="botoes" id="5">5</div>
-                <div class="botoes" id="6">6</div>
-                <div class="botoes" id="7">7</div>
-                <div class="botoes" id="8">8</div>
-                <div class="botoes" id="9">9</div>
-                <div class="botoes" id="virgula">,</div>
-                <div class="botoes" id="adicao">+</div>
-                <div class="botoes" id="subtracao">-</div>
-                <div class="botoes" id="divisao">/</div>
-                <div class="botoes" id="multiplicacao">x</div>
-                <div class="botoes" id="igual">=</div>
+                <div class="row r1" id="r1">
+                    <input type="button" value="AC" class="botoes" id="ac" onclick="limpar()"></input>
+                </div>
+                <div class="row r2">
+                    <input type="button" value="7" class="botoes" id="7" onclick="add_num('7')"></input>
+                    <input type="button" value="8" class="botoes" id="8" onclick="add_num('8')"></input>
+                    <input type="button" value="9" class="botoes" id="9" onclick="add_num('9')"></input>
+                    <input type="button" value="/" class="botoes" id="divisao" onclick="add_operador('/')"></input>
+                </div>
+                <div class="row r3">
+                    <input type="button" value="4" class="botoes" id="4" onclick="add_num('4')"></input>
+                    <input type="button" value="5" class="botoes" id="5" onclick="add_num('5')"></input>
+                    <input type="button" value="6" class="botoes" id="6" onclick="add_num('6')"></input>
+                    <input type="button" value="X" class="botoes" id="multiplicacao" onclick="add_operador('X')"></input>
+                </div>
+                <div class="row r4">
+                    <input type="button" value="1" class="botoes" id="1" onclick="add_num('1')"></input>
+                    <input type="button" value="2" class="botoes" id="2" onclick="add_num('2')"></input>
+                    <input type="button" value="3" class="botoes" id="3" onclick="add_num('3')"></input>
+                    <input type="button" value="-" class="botoes" id="subtracao" onclick="add_operador('-')"></input>
+                </div>
+                <div class="row r5">
+                    <input type="button" value="." class="botoes" id="virgula" onclick="add_num('.')"></input>
+                    <input type="button" value="0" class="botoes" id="0" onclick="add_num('0')"></input> 
+                    <input type="button" value="=" class="botoes" id="igual"></input>
+                    <input type="button" value="+" class="botoes" id="adicao" onclick="add_operador('+')"></input>
+                </div>
             </div>
         </section>
     </main>
+    <script type="text/javascript" src="math.js"></script>
 </body>
 </html>
