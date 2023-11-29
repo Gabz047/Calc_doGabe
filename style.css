@@ -51,8 +51,8 @@
 
 #r1 {
  display: flex;
- justify-content: flex-start;
- margin-left: 1%;  
+ justify-content: space-between;
+ margin: 0 1%;  
 }
 
 .row {
@@ -68,9 +68,11 @@
     color: white;
     border: 1px solid rgb(255, 72, 72);
     border-radius: 5px;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-family:'Courier New', Courier, monospace;
     gap: 4%;
+    display: flex;
+    justify-content: center;
 }
 
 .botoes:hover {
