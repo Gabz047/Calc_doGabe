@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Quicksand:wght@500&display=swap');
+
 #calc_container {
     width: 20vw;
     height: 60vh;
@@ -18,26 +20,34 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row: 20% 80%;
+    overflow: hidden;
 }
 
 #previous {
+    width: 95%;
     grid-row: 1;
     display: flex;
     justify-content: end;
     margin-right: 20px;
     color: rgb(255, 72, 72);
     font-size: 2vh;
+    font-family:'Nova Square', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #atual {
     grid-row: 2;
+    width: 94%;
     display: flex;
     justify-content:flex-end;
-    margin-right: 50px;
+    margin: 0 auto;
     position: relative;
-    bottom: 25%;
+    bottom: 10%;
     color: white;
     font-size: 6vh;
+    font-family:'Nova Square', sans-serif;
+    overflow: auto;
 }
 
 #botoes_container {
@@ -69,12 +79,21 @@
     border: 1px solid rgb(255, 72, 72);
     border-radius: 5px;
     font-size: 2vh;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Nova Square', sans-serif;
     gap: 4%;
     display: flex;
     justify-content: center;
+    transition: 0.1s ease-in-out;
 }
 
 .botoes:hover {
     background-color: rgb(255, 112, 112);
+}
+
+.botoes:active {
+    transform: scale(0.96);
+}
+
+.btExp {
+    background-color: rgb(253, 55, 55);
 }
